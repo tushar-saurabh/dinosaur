@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinographic</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Orbitron:wght@700&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <link href="app.css" rel="stylesheet">
+    <script defer src="app.js"></script>
+</head>
+<body>
+    <header id="dino-head">
+        <h2>Natural History Museum</h2> 
+        <h1>Dinosaurs</h1>
+        <h3>How do you compare?</h3>
+    </header>
+    <form id="dino-compare">
+        <div class="form-container">
+            <label>Name<input id="name" class="form-field__full" type="name" name="name" required /> </label>
+            <br><br>
+            <label>Height(in cms)<input id="cms" class="form-field__short" type="number" name="cms" required /></label>
+            <br><br>
+            <label>Weight(in Kgs)<input id="weight" class="form-field__full" type="number" name="weight" required /></label>
+            <P>Continent</p>
+                <select id="continent" class="form-field__full" name="continent">
+                    <option>Africa</option>
+                    <option>Asia</option>
+                    <option>Australia</option>
+                    <option>Antarctica</option>
+                    <option>Europe</option>
+                    <option>North Ameria</option>
+                    <option>South America</option>
+                </select>
+            <p>Diet</p>
+            <select id="diet" class="form-field__full" name="diet">
+                <option>Herbavor</option>
+                <option>Omnivor</option>
+                <option>Carnivor</option>
+            </select>
+            <br>
+        </div>
+    </form>
+    <div>
+        <input id="btn" type="button" value=" Compare Me">
+    </div>
+    <!-- .grid to attach tiles to -->
+    <main id="grid">
+    </main>
+        <footer>
+            <!-- Include information source -->
+            <p class="fine-print">Data Sourced from <a href="https://www.wikipedia.org/">Wikipedia.org</a>, all numbers are approximations.</p>
+        </footer>
+</body>
+</html>
